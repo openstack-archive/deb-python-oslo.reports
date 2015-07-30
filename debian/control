@@ -1,0 +1,101 @@
+Source: python-oslo.reports
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               openstack-pkg-tools,
+               python-all,
+               python-pbr (>= 1.3),
+               python-setuptools,
+               python-sphinx,
+               python3-all,
+               python3-pbr (>= 1.3),
+               python3-setuptools,
+Build-Depends-Indep: python-babel,
+                     python-eventlet (>= 0.17.4),
+                     python-greenlet (>= 0.3.2),
+                     python-hacking,
+                     python-jinja2,
+                     python-oslo.config (>= 1:1.11.0),
+                     python-oslo.i18n (>= 1.5.0),
+                     python-oslo.serialization (>= 1.4.0),
+                     python-oslo.utils (>= 1.9.0),
+                     python-oslosphinx (>= 2.5.0),
+                     python-oslotest (>= 1.9.0),
+                     python-pbr (>= 1.3),
+                     python-psutil,
+                     python-six (>= 1.9.0),
+                     python3-babel (>= 1.3),
+                     python3-eventlet (>= 0.17.4),
+                     python3-greenlet (>= 0.3.2),
+                     python3-jinja2 (>= 2.6),
+                     python3-oslo.config (>= 1:1.11.0),
+                     python3-oslo.i18n (>= 1.5.0),
+                     python3-oslo.serialization (>= 1.4.0),
+                     python3-oslo.utils (>= 1.9.0),
+                     python3-oslosphinx (>= 2.5.0),
+                     python3-oslotest (>= 1.9.0),
+                     python3-pbr (>= 1.3),
+                     python3-psutil,
+                     python3-six (>= 1.9.0),
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-oslo.reports.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-oslo.reports.git
+Homepage: http://launchpad.net/oslo
+
+Package: python-oslo.reports
+Architecture: all
+Depends: python-babel,
+         python-jinja2,
+         python-oslo.i18n (>= 1.5.0),
+         python-oslo.serialization (>= 1.4.0),
+         python-oslo.utils (>= 1.9.0),
+         python-pbr (>= 1.3),
+         python-psutil,
+         python-six (>= 1.9.0),
+         ${misc:Depends},
+         ${python:Depends},
+Suggests: python-oslo.reports-doc,
+Description: reports serialized in various data types - Python 2.7
+ This package/module provides mechanisms for defining reports which may then
+ be serialized into various data types. Each report is composed of one or more
+ report sections, which contain generators which generate data models, which
+ are then serialized by views.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-oslo.reports
+Architecture: all
+Depends: python3-babel,
+         python3-jinja2,
+         python3-oslo.i18n (>= 1.5.0),
+         python3-oslo.serialization (>= 1.4.0),
+         python3-oslo.utils (>= 1.9.0),
+         python3-pbr (>= 1.3),
+         python3-psutil,
+         python3-six (>= 1.9.0),
+         ${misc:Depends},
+         ${python3:Depends},
+Suggests: python-oslo.reports-doc,
+Description: reports serialized in various data types - Python 3.x
+ This package/module provides mechanisms for defining reports which may then
+ be serialized into various data types. Each report is composed of one or more
+ report sections, which contain generators which generate data models, which
+ are then serialized by views.
+ .
+ This package contains the Python 3.x module.
+
+Package: python-oslo.reports-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+         ${sphinxdoc:Depends},
+Description: reports serialized in various data types - doc
+ This package/module provides mechanisms for defining reports which may then
+ be serialized into various data types. Each report is composed of one or more
+ report sections, which contain generators which generate data models, which
+ are then serialized by views.
+ .
+ This package contains the documentation.

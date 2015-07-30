@@ -1,0 +1,5 @@
+python-oslo.reports (0.3.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #794167)
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 31 Jul 2015 00:18:51 +0200
