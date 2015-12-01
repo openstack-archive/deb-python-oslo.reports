@@ -24,6 +24,7 @@ pip-log.txt
 
 # Unit test / coverage reports
 .coverage
+cover
 .tox
 nosetests.xml
 .testrepository
@@ -46,6 +47,7 @@ doc/build
 # pbr generates these
 AUTHORS
 ChangeLog
+/doc/source/api/
 
 # Editors
 *~

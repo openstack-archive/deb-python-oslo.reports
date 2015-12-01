@@ -23,7 +23,8 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx'
+    'oslosphinx',
+    'oslo_config.sphinxext',
 ]
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
@@ -49,6 +50,9 @@ add_module_names = True
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
+
+# A list of ignored prefixes for module index sorting.
+modindex_common_prefix = ['oslo_reports.']
 
 # -- Options for HTML output --------------------------------------------------
 

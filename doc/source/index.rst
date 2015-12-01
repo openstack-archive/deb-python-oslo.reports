@@ -11,9 +11,24 @@ Contents
    :maxdepth: 2
 
    installation
-   api
    usage
+   opts
    contributing
+
+API
+===
+
+.. toctree::
+   :maxdepth: 2
+
+   api/autoindex
+
+Release Notes
+=============
+
+.. toctree::
+   :maxdepth: 1
+
    history
 
 Indices and tables
