@@ -1,6 +1,7 @@
 python-oslo.reports (1.2.0-1) experimental; urgency=medium
 
   * New upstream release.
+  * Also test with Py3.5.
 
  -- Thomas Goirand <zigo@debian.org>  Wed, 13 Jan 2016 06:36:18 +0000
 
