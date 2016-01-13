@@ -64,6 +64,7 @@ import logging
 import os
 import signal
 import sys
+import traceback
 
 from oslo_utils import timeutils
 
@@ -153,11 +154,11 @@ class GuruMeditation(object):
     @classmethod
     def _setup_signal(cls, signum, version, service_name, log_dir):
         signal.signal(signum,
-                      lambda sn, tb: cls.handle_signal(
-                          version, service_name, log_dir, tb))
+                      lambda sn, f: cls.handle_signal(
+                          version, service_name, log_dir, f))
 
     @classmethod
-    def handle_signal(cls, version, service_name, log_dir, traceback):
+    def handle_signal(cls, version, service_name, log_dir, frame):
         """The Signal Handler
 
         This method (indirectly) handles receiving a registered signal and
@@ -172,12 +173,13 @@ class GuruMeditation(object):
         :param version: the version object for the current product
         :param service_name: this program name used to construct logfile name
         :param logdir: path to a log directory where to create a file
-        :param traceback: the traceback provided to the signal handler
+        :param frame: the frame object provided to the signal handler
         """
 
         try:
-            res = cls(version, traceback).run()
+            res = cls(version, frame).run()
         except Exception:
+            traceback.print_exc(file=sys.stderr)
             print("Unable to run Guru Meditation Report!",
                   file=sys.stderr)
         else:
