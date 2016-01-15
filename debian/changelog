@@ -2,6 +2,7 @@ python-oslo.reports (1.3.0-1) experimental; urgency=medium
 
   * New upstream release.
   * Fixed build-depends versions.
+  * Fixed debian/copyright ordering.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 15 Jan 2016 07:12:17 +0000
 
