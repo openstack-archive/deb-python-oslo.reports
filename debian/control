@@ -39,8 +39,8 @@ Build-Depends-Indep: python-babel,
                      python3-psutil,
                      python3-six (>= 1.9.0),
 Standards-Version: 3.9.6
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-oslo.reports.git
-Vcs-Git: git://anonscm.debian.org/openstack/python-oslo.reports.git
+Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-oslo.reports.git/
+Vcs-Git: https://anonscm.debian.org/git/openstack/python-oslo.reports.git
 Homepage: https://launchpad.net/oslo
 
 Package: python-oslo.reports
