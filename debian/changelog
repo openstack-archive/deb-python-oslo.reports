@@ -1,4 +1,4 @@
-python-oslo.reports (1.11.0-1) UNRELEASED; urgency=medium
+python-oslo.reports (1.11.0-1) experimental; urgency=medium
 
   [ Ondřej Nový ]
   * Standards-Version is 3.9.8 now (no change)
@@ -14,7 +14,10 @@ python-oslo.reports (1.11.0-1) UNRELEASED; urgency=medium
   * New upstream release.
   * d/control: Align (build-)depends with upstream.
 
- -- David Della Vecchia <ddv@canonical.com>  Thu, 30 Jun 2016 11:19:40 -0400
+  [ Thomas Goirand ]
+  * Switch to pkgos-dh_auto_{install,test}.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 01 Jul 2016 19:20:11 +0000
 
 python-oslo.reports (1.7.0-2) unstable; urgency=medium
 
