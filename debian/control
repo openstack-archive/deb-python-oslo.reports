@@ -38,8 +38,8 @@ Build-Depends-Indep: python-coverage,
                      python3-psutil,
                      python3-six (>= 1.9.0),
 Standards-Version: 3.9.8
-Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-oslo.reports
-Vcs-Git: https://git.openstack.org/openstack/deb-python-oslo.reports
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-oslo.reports?h=debian%2Fnewton
+Vcs-Git: https://git.openstack.org/openstack/deb-python-oslo.reports -b debian/newton
 Homepage: https://launchpad.net/oslo
 
 Package: python-oslo.reports
