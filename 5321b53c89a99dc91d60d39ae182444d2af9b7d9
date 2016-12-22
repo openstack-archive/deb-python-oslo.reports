@@ -1,0 +1,9 @@
+Code-Review+2: Doug Hellmann <doug@doughellmann.com>
+Code-Review+2: Michael Still <mikal@stillhq.com>
+Workflow+1: Michael Still <mikal@stillhq.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 22 Dec 2016 01:33:46 +0000
+Reviewed-on: https://review.openstack.org/409093
+Project: openstack/deb-python-oslo.reports
+Branch: refs/heads/master
